@@ -1,21 +1,18 @@
 //
 //  ContentView.swift
-//  TaskManagementApp
+//  TaskMgmtApp
 //
-//  Created by Oko-osi Korede on 01/08/2023.
+//  Created by Oko-osi Korede on 31/07/2023.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Home()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.gray.opacity(0.1))
+            .preferredColorScheme(.light)
     }
 }
 
